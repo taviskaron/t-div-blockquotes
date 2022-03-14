@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.3s ease;
+}
+
+body {
+    margin: 0;
+    margin-top: 60px;
+    padding: 0;
+    font-family: "Open Sans", "Noto Sans", HelveticaNeueCyr, Helvetica, sans-serif;
+    line-height: 1.68em;
+    color: #333333;
+    background: #fafafa;
+}
+
+blockquote {
+    padding: 0;
+    margin: 0;
+}
+
+.white-bg {
+    background: #ffffff;
+}
+
+section.t-bq-section {
+    padding: 30px;
+    margin-bottom: 60px;
+}
+
+.t-bq-wrapper.t-bq-wrapper-boxed {
+    max-width: 576px;
+    margin: 0 auto;
+}
+
+.t-bq-wrapper.t-bq-wrapper-fullwidth {
+    max-width: 100%;
+}
+
+.t-bq-wrapper .t-bq-quote {
+    padding: 20px;
+}
+
+.t-bq-wrapper .t-bq-quote .t-bq-quote-share-button {
+    padding: 5px 15px;
+    background: deepskyblue;
+    color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.t-bq-wrapper .t-bq-quote .t-bq-quote-share-button:active {
+    position: relative;
+    top: 1px;
+}
+
+
+
+
+
+
+
+/* ========== 1. Jason ========== */
+
+.t-bq-quote-jason {
+    border-left: 10px solid deepskyblue;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.t-bq-quote-jason .t-bq-quote-jason-qmark {
+    padding-right: 20px;
+    font-size: 32pt;
+    opacity: 0.4;
+}
+
+.t-bq-quote-jason .t-bq-quote-jason-base {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.t-bq-quote-jason .t-bq-quote-jason-base .t-bq-quote-jason-text {
+    flex-grow: 2;
+    margin-bottom: 10px;
+}
+
+.t-bq-quote-jason .t-bq-quote-jason-base .t-bq-quote-jason-author,
+.t-bq-quote-jason .t-bq-quote-jason-base .t-bq-quote-jason-share {
+    flex-grow: 1;
+}
+
+.t-bq-quote-jason .t-bq-quote-jason-base .t-bq-quote-jason-author {
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+.t-bq-quote-jason .t-bq-quote-jason-base .t-bq-quote-jason-share {
+    margin-left: auto;
+    flex-shrink: 0;
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+
+    .t-bq-quote-jason .t-bq-quote-jason-base .t-bq-quote-jason-text {
+        flex-grow: 1;
+    }
+
+    .t-bq-quote-jason .t-bq-quote-jason-base .t-bq-quote-jason-author,
+    .t-bq-quote-jason .t-bq-quote-jason-base .t-bq-quote-jason-share {
+        flex-basis: 100%;
+    }
+
+    .t-bq-quote-jason .t-bq-quote-jason-base .t-bq-quote-jason-author {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ========== 2. Mary ========== */
+
+.t-bq-quote-mary {
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.t-bq-quote-mary .t-bq-quote-mary-userpic {
+    min-width: 70px;
+    min-height: 70px;
+    width: 70px;
+    height: 70px;
+    border: 2px solid deepskyblue;
+    border-radius: 50%;
+    background: url("img/userpic.jpg") center center no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+    align-self: center;
+}
+
+.t-bq-quote-mary .t-bq-quote-mary-base {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.t-bq-quote-mary .t-bq-quote-mary-base .t-bq-quote-mary-text {
+    flex-grow: 2;
+    margin-bottom: 10px;
+}
+
+.t-bq-quote-mary .t-bq-quote-mary-base .t-bq-quote-mary-author,
+.t-bq-quote-mary .t-bq-quote-mary-base .t-bq-quote-mary-share {
+    flex-grow: 1;
+}
+
+.t-bq-quote-mary .t-bq-quote-mary-base .t-bq-quote-mary-author {
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+.t-bq-quote-mary .t-bq-quote-mary-base .t-bq-quote-mary-share {
+    margin-left: auto;
+    flex-shrink: 0;
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+
+    .t-bq-quote-mary {
+        flex-direction: column;
+    }
+
+    .t-bq-quote-mary .t-bq-quote-mary-userpic {
+        margin-bottom: 10px;
+    }
+
+    .t-bq-quote-mary .t-bq-quote-mary-base {
+        text-align: center;
+    }
+
+    .t-bq-quote-mary .t-bq-quote-mary-base .t-bq-quote-mary-text {
+        flex-grow: 1;
+    }
+
+    .t-bq-quote-mary .t-bq-quote-mary-base .t-bq-quote-mary-author,
+    .t-bq-quote-mary .t-bq-quote-mary-base .t-bq-quote-mary-share {
+        flex-basis: 100%;
+    }
+
+    .t-bq-quote-mary .t-bq-quote-mary-base .t-bq-quote-mary-author {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ========== 3. John ========== */
+
+section#john {
+    background: white;
+}
+
+.t-bq-quote-john {
+    position: relative;
+}
+
+.t-bq-quote-john-qmark {
+    position: absolute;
+    left: 4px;
+    top: calc(50% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    background: darkcyan;
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 40px;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.t-bq-quote-john-qmark span {
+    padding-top: 10px;
+}
+
+.t-bq-quote-john-base {
+    border-left: 8px solid darkcyan;
+    padding-left: 40px;
+}
+
+.t-bq-quote-john-text {
+    font-weight: lighter;
+}
+
+.t-bq-quote-john-text:after {
+    content: "\2014\00A0" attr(cite);
+    display: block;
+    text-align: right;
+    font-size: 11pt;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .t-bq-quote-john-base {
+        border-left: 4px solid darkcyan;
+        padding-left: 20px;
+    }
+
+    .t-bq-quote-john-qmark {
+        width: 20px;
+        height: 20px;
+        max-width: 20px;
+        max-height: 20px;
+        left: 12px;
+        top: calc(50% - 10px);
+        font-size: 20px;
+        line-height: 20px;
+
+    }
+
+    .t-bq-quote-john-text {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ========== 4. Nick ========== */
+
+.t-bq-quote-nick .t-bq-quote-nick-base .t-bq-quote-nick-text {
+    position: relative;
+}
+
+.t-bq-quote-nick .t-bq-quote-nick-base .t-bq-quote-nick-text:after,
+.t-bq-quote-nick .t-bq-quote-nick-base .t-bq-quote-nick-text:before {
+    font-family:  Garamond, Georgia, serif;
+    font-size: 7rem;
+    font-weight: bold;
+    opacity: 0.2;
+    position: absolute;
+}
+
+.t-bq-quote-nick .t-bq-quote-nick-base .t-bq-quote-nick-text:after {
+    content: "\201D";
+    right: -4rem;
+    top: 100%;
+}
+
+.t-bq-quote-nick .t-bq-quote-nick-base .t-bq-quote-nick-text:before {
+    content: "\201C";
+    left: -4.5rem;
+    top: 1rem;
+}
+
+.t-bq-quote-nick .t-bq-quote-nick-base .t-bq-quote-nick-author {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+.t-bq-quote-nick .t-bq-quote-nick-base .t-bq-quote-nick-author cite:before {
+    content: "\2014\00A0";
+}
+
+@media screen and (max-width: 768px) {
+
+    .t-bq-quote-nick .t-bq-quote-nick-base .t-bq-quote-nick-text:before {
+        font-size: 5rem;
+        left: 0;
+        top: -2rem;
+    }
+
+    .t-bq-quote-nick .t-bq-quote-nick-base .t-bq-quote-nick-text:after {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ========== 5. Suzy ========== */
+
+section#suzy {
+    background: url("img/binding_dark.png") repeat;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #fafafa;
+}
+
+.t-bq-quote-suzy {
+    position: relative;
+}
+
+.t-bq-quote-suzy .t-bq-quote-suzy-base .t-bq-quote-suzy-text:before {
+    content: "\201C";
+    font-family: Impact, "Trebuchet MS", sans-serif;
+    font-size: 36rem;
+    top: calc(100% - 4rem);
+    left: -4rem;
+    position: absolute;
+    opacity: 0.1;
+}
+
+.t-bq-quote-suzy .t-bq-quote-suzy-base .t-bq-quote-suzy-text {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.68em;
+}
+
+.t-bq-quote-suzy .t-bq-quote-suzy-base .t-bq-quote-suzy-author  {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 11pt;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.t-bq-quote-suzy .t-bq-quote-suzy-base .t-bq-quote-suzy-author cite {
+    font-style: normal;
+}
+
+.t-bq-quote-suzy .t-bq-quote-suzy-base .t-bq-quote-suzy-author cite:before {
+    content: "\2014\2003";
+}
+
+.t-bq-quote-suzy .t-bq-quote-suzy-base .t-bq-quote-suzy-author cite:after {
+    content: "\2003\2014";
+}
+
+.t-bq-quote-suzy .t-bq-quote-suzy-base .t-bq-quote-suzy-author cite:before,
+.t-bq-quote-suzy .t-bq-quote-suzy-base .t-bq-quote-suzy-author cite:after {
+    font-size: 16pt;
+}
+
+
+
+
+
+
+
+
+
+
+/* ========== 6. Emma ========== */
+
+.t-bq-quote-emma {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    min-height: 250px;
+    background: #ffffff;
+    padding: 0!important;
+    align-items: stretch;
+    border-radius: 20px;
+    box-shadow: 2px 2px 25px #cecece;
+}
+
+.t-bq-quote-emma .t-bq-quote-emma-qmark {
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 30px);
+    background: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Garamond, Georgia, serif;
+    font-size: 3em;
+    color: #666666;
+    line-height: 60px;
+    user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    border-top: 2px solid #eeeeee;
+}
+
+.t-bq-quote-emma .t-bq-quote-emma-qmark span {
+    padding-top: 0.25em;
+}
+
+.t-bq-quote-emma .t-bq-quote-emma-userpic {
+    flex-basis: 150px;
+    width: 150px;
+    min-width: 150px;
+    max-height: 300px;
+    background: url("img/strug.jpg") center center no-repeat;
+    background-size: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.t-bq-quote-emma .t-bq-quote-emma-base {
+    flex-basis: calc(100% - 150px);
+    padding: 60px 30px 45px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.t-bq-quote-emma .t-bq-quote-emma-base .t-bq-quote-emma-text {
+    font-size: 0.85em;
+    line-height: 1.8em;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.t-bq-quote-emma .t-bq-quote-emma-base .t-bq-quote-emma-text:after {
+    content: "\2014\00A0" attr(cite);
+    display: block;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .t-bq-quote-emma {
+        flex-direction: column;
+    }
+
+    .t-bq-quote-emma .t-bq-quote-emma-base {
+        padding-top: 0;
+    }
+
+    .t-bq-quote-emma .t-bq-quote-emma-userpic {
+        border-radius: 20px;
+        height: 150px;
+        margin: 40px auto 20px auto;
+    }
+
+    .t-bq-quote-emma .t-bq-quote-emma-base .t-bq-quote-emma-text {
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ========== 7. Mike ========== */
+
+.t-bq-quote-mike {
+    position: relative;
+    border-top: 0.45em solid darkslateblue;
+    border-bottom: 0.45em solid darkslateblue;
+    padding: 20px 0!important;
+    letter-spacing: -0.08em;
+    transform: rotate(2deg);
+}
+
+.t-bq-quote-mike .t-bq-quote-mike-qmark {
+    position: absolute;
+    font-size: 10em;
+    color: midnightblue;
+    opacity: 0.2;
+    bottom: 0;
+    right: 0;
+}
+
+.t-bq-quote-mike .t-bq-quote-mike-base .t-bq-quote-mike-text {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 1.3em;
+    color: darkslateblue;
+}
+
+.t-bq-quote-mike .t-bq-quote-mike-base .t-bq-quote-mike-text:after {
+    content: "\2014\00A0" attr(cite);
+    display: block;
+    font-size: 0.5em;
+    color: midnightblue;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: -1.38em;
+}
+
+@media screen and (max-width: 768px) {
+    .t-bq-quote-mike .t-bq-quote-mike-base .t-bq-quote-mike-text:after{
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ========== 8. Sophia ========== */
+
+.t-bq-quote-sophia .t-bq-quote-sophia-base {
+    background: white;
+    padding: 20px 40px 40px 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.t-bq-quote-sophia .t-bq-quote-sophia-base:after {
+    content: "";
+    position: absolute;
+    background: #ffffff;
+    transform: rotate(45deg);
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    bottom: -15px;
+    left: calc(50% - 15px);
+    z-index: -1;
+}
+
+.t-bq-quote-sophia .t-bq-quote-sophia-author {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.t-bq-quote-sophia .t-bq-quote-sophia-author cite {
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.t-bq-quote-sophia .t-bq-quote-sophia-userpic {
+    width: 100px;
+    height: 100px;
+    background: url("img/strug.jpg") center center no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ========== 9. Jenny ========== */
+
+.t-bq-quote-jenny .t-bq-quote-jenny-base {
+    background: white;
+    padding: 20px 40px 40px 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.t-bq-quote-jenny .t-bq-quote-jenny-base:after {
+    content: "";
+    position: absolute;
+    background: #ffffff;
+    transform: rotate(45deg);
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    bottom: -15px;
+    left: calc(100% - 100px - 15px);
+    z-index: -1;
+}
+
+.t-bq-quote-jenny .t-bq-quote-jenny-base .t-bq-quote-jenny-text {
+   text-indent: 5em;
+    line-height: 1.8em;
+}
+
+.t-bq-quote-jenny .t-bq-quote-jenny-base .t-bq-quote-jenny-text:before {
+    content: "\201C";
+    position: absolute;
+    left: -55px;
+    top: 55px;
+    font-family: Georgia, serif;
+    font-size: 160pt;
+    color: #cecece;
+
+}
+
+.t-bq-quote-jenny .t-bq-quote-jenny-meta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.t-bq-quote-jenny .t-bq-quote-jenny-meta .t-bq-quote-jenny-meta-info {
+    flex-basis: calc(100% - 50px);
+}
+
+.t-bq-quote-jenny .t-bq-quote-jenny-meta .t-bq-quote-jenny-author,
+.t-bq-quote-jenny .t-bq-quote-jenny-meta .t-bq-quote-jenny-source {
+    text-align: right;
+    flex-basis: 100%;
+    padding-right: 15px;
+    line-height: 1.38em;
+}
+
+.t-bq-quote-jenny .t-bq-quote-jenny-meta .t-bq-quote-jenny-author cite {
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.t-bq-quote-jenny .t-bq-quote-jenny-meta .t-bq-quote-jenny-source span {
+    font-size: 11pt;
+}
+
+.t-bq-quote-jenny .t-bq-quote-jenny-meta .t-bq-quote-jenny-userpic {
+    flex-basis: 50px;
+    flex-grow: 0;
+    width: 50px;
+    height: 50px;
+    background: url("img/strug.jpg") center center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+
+    margin-left: auto;
+}
